@@ -1,0 +1,12 @@
+name = "my-typescript-worker"
+type = "javascript"
+zone_id = ""
+account_id = "dd4ffc5888f26a7cde7cfbb6b4e381ac"
+route = ""
+workers_dev = true
+compatibility_date = "2022-04-03"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
