@@ -1,17 +1,15 @@
 name = "my-typescript-worker"
 type = "javascript"
-zone_id = ""
+# zone_id = ""
 account_id = "dd4ffc5888f26a7cde7cfbb6b4e381ac"
-route = ""
+# route = ""
 workers_dev = true
 compatibility_date = "2022-04-03"
 kv_namespaces = [ 
         { binding = "MY_KV", id = "11a7f2e0ea99407e87dc7b41a78263ec" }
 ]
 [build]
-command = "yarn install && npm run build:es"
+command = "npm install && npm run build:es"
 
 [build.upload]
-format = "modules"
-dir = "dist"
-main = "./index.mjs"
+format = "service-worker"
