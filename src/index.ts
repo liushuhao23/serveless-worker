@@ -4,10 +4,9 @@
  * @Autor: liushuhao
  * @Date: 2022-04-03 22:15:08
  * @LastEditors: liushuhao
- * @LastEditTime: 2022-04-06 17:37:34
+ * @LastEditTime: 2022-04-07 11:11:58
  */
 
-// const namespaces: any = ''
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS',
@@ -22,7 +21,6 @@ async function handleRequest(request: Request) {
     success: true,
     data: JSON.parse((JSON.stringify(value)))
   }
-  console.log(params, 'params')
   if (value === null) {
     return new Response("Value not found", {
       status: 404, headers: {
